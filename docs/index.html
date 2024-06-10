@@ -1,0 +1,106 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+layout: default
+title: Portfolio
+---
+<!-- works -->
+<section class="works section" id="works">
+  <div class="container">
+    <h2 class="title">WORKS</h2>
+    <div class="works-list">
+      {% for project in site.data.projects %}
+        <a class="works-item" href="{{ project.url }}" target="_blank">
+          <div class="works-img"><img src="assets/img/{{ project.image }}" alt="" /></div>
+          <p class="works-name">{{ project.name }}</p>
+          <p class="works-info">
+            {% for skill in project.skills %}
+              <span class="works-skill">{{ skill }}</span>
+            {% endfor %}
+          </p>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<!-- /works -->
+
+<!-- skill -->
+<section class="skill section" id="skill">
+  <div class="container">
+    <h2 class="title">SKILL</h2>
+    <div class="skill-list">
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">HTML5/CSS3</h3>
+          <p class="skill-text">
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">WordPress</h3>
+          <p class="skill-text">
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">JavaScript</h3>
+          <p class="skill-text">
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">Photoshop</h3>
+          <p class="skill-text">
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">Illustrator</h3>
+          <p class="skill-text">
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+        </div>
+      </div>
+      <div class="skill-item">
+        <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+        <div class="skill-body">
+          <h3 class="skill-name">XD</h3>
+          <p class="skill-text">
+            テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /skill -->
+
+<!-- about -->
+<section class="about section" id="about">
+  <div class="container">
+    <h2 class="title">ABOUT</h2>
+    <div class="profile">
+      <p class="profile-img">
+        <img src="img/profile.jpg" alt="">
+      </p>
+      <div class="profile-body">
+        <p>
+          テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+        </p>
+        <p>
+          テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /about -->

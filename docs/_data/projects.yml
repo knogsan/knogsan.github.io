@@ -1,0 +1,13 @@
+- name: "Tech Eats"
+  image: "nature-3044755_960_720.jpg"
+  skills:
+    - "React"
+    - "Ruby on Rails"
+  url: "https://uber-eats-like-knog.netlify.app/"
+  description: "Description of project 1"
+- name: "Project 2"
+  image: "nature-3044755_960_720.jpg"
+  description: "Description of project 2"
+- name: "Project 3"
+  image: "nature-3044755_960_720.jpg"
+  description: "Description of project 2"

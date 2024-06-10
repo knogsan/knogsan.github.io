@@ -1,0 +1,15 @@
+<header class="header" role="banner">
+  <div class="container">
+    <div class="header-logo">
+      <a rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    </div>
+
+    <nav class="gnav">
+      <ul class="gnav-list">
+        {% for page in site.data.pages %}
+          <li class="gnav-item"><a href="/{{ page.title }}">{{ page.title | capitalize }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
